@@ -26,11 +26,12 @@ body {
   padding: 20px 10px;
   color: rgb(224, 218, 218);
   font-family: Arial;
-  font-size: 40px;
+  font-size: 50px;
   overflow: hidden;
   text-overflow: ' ';
   letter-spacing: 1px;
   margin-bottom: 10px;
+  border-radius: 5px 5px 0 0;
 }
 
 #buttons-container {
@@ -52,12 +53,14 @@ body {
   width: 75%;
 }
 
-#equals {
+#equal {
   flex-grow: 1;
+  border-radius: 3px 3px 5px 3px;
 }
 
 #zero {
   flex: 1;
+  border-radius: 3px 3px 3px 5px;
 }
 
 button {
@@ -65,7 +68,7 @@ button {
   min-height: 75px;
   cursor: pointer;
   padding: 20px;
-  border-radius: 2px;
+  border-radius: 3px;
   display: inline-block;
   border: none;
   font-size: 20px;
@@ -73,6 +76,7 @@ button {
 
 button:hover {
   opacity: 0.9;
+  font-weight: bold;
 }
 
 #nine,
