@@ -86,19 +86,20 @@ button:hover {
 #one,
 #zero,
 #decimal {
-  background-color: rgb(154, 155, 91);
+  background-color: rgb(153, 153, 144);
 }
 
 #add,
 #subtract,
 #divide,
 #multiply {
-  background-color: rgb(90, 105, 134);
+  background-color: rgb(73, 83, 104);
   color: white;
 }
 
 #equal {
-  background-color: rgb(204, 169, 103);
+  background-color: rgb(74, 91, 95);
+  color: white;
 }
 
 #clear {

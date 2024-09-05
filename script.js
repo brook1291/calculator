@@ -32,6 +32,12 @@ const numInputArr = [
   zero,
 ];
 
+const addBtn = document.querySelector('#add');
+const subtractBtn = document.querySelector('#subtract');
+const multiplyBtn = document.querySelector('#multiply');
+const divideBtn = document.querySelector('#divide');
+const operations = [addBtn, subtractBtn, multiplyBtn, divideBtn];
+
 numInputArr.forEach((node) => {
   node.addEventListener('click', populateDisplay);
 });
