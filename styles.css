@@ -68,6 +68,7 @@ button {
   display: inline-block;
   border: none;
   font-size: 25px;
+  font-family: Monaco;
 }
 
 button:hover {
