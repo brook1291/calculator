@@ -29,7 +29,6 @@ body {
   font-family: Arial;
   font-size: 50px;
   overflow: hidden;
-  text-overflow: ' ';
   letter-spacing: 1px;
   margin-bottom: 10px;
   border-radius: 5px 5px 0 0;

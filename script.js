@@ -39,6 +39,8 @@ const divideBtn = document.querySelector('#divide');
 const equalsBtn = document.querySelector('#equal');
 const operations = [addBtn, subtractBtn, multiplyBtn, divideBtn];
 
+const clearBtn = document.querySelector('#clear');
+
 operations.forEach((el) => {
   el.addEventListener('click', (e) => {
     if (operator === '/' && secondNum === 0) {
@@ -98,8 +100,6 @@ function populateDisplay(e) {
   }
   if (display.textContent === '0' && e.target.id !== 'decimal') {
     display.textContent = e.target.textContent;
-  } else if (display.textContent === '0' && e.target.id === 'decimal') {
-    display.textContent += e.target.textContent;
   } else {
     display.textContent += e.target.textContent;
   }
