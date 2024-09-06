@@ -41,7 +41,6 @@ const operations = [addBtn, subtractBtn, multiplyBtn, divideBtn];
 
 const clearBtn = document.querySelector('#clear');
 const deleteBtn = document.querySelector('#backspace');
-const buttons = document.querySelectorAll('button');
 const display = document.querySelector('#display');
 
 operations.forEach((el) => {
