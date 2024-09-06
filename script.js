@@ -36,6 +36,7 @@ const addBtn = document.querySelector('#add');
 const subtractBtn = document.querySelector('#subtract');
 const multiplyBtn = document.querySelector('#multiply');
 const divideBtn = document.querySelector('#divide');
+const equalsBtn = document.querySelector('#equal');
 const operations = [addBtn, subtractBtn, multiplyBtn, divideBtn];
 
 operations.forEach((el) => {
