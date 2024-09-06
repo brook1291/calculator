@@ -48,7 +48,7 @@ operations.forEach((el) => {
       alert("Don't do that!");
       return;
     }
-    if (firstNum && operator) {
+    if (firstNum && operator && secondNum !== false) {
       display.textContent =
         Math.round(operate(firstNum, operator, secondNum) * 1000000) / 1000000;
       displayValue = display.textContent;
