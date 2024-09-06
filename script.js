@@ -40,6 +40,7 @@ const equalsBtn = document.querySelector('#equal');
 const operations = [addBtn, subtractBtn, multiplyBtn, divideBtn];
 
 const clearBtn = document.querySelector('#clear');
+const deleteBtn = document.querySelector('#backspace');
 
 operations.forEach((el) => {
   el.addEventListener('click', (e) => {
