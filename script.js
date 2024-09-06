@@ -83,7 +83,7 @@ numInputArr.forEach((node) => {
 });
 
 decimalPoint.addEventListener('click', (e) => {
-  if (!displayValue.includes('.')) {
+  if (!displayValue.includes('.') || secondNum === false) {
     populateDisplay(e);
   }
 });
