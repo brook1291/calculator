@@ -45,7 +45,9 @@ const deleteBtn = document.querySelector('#backspace');
 operations.forEach((el) => {
   el.addEventListener('click', (e) => {
     if (operator === '/' && secondNum === 0) {
-      alert("Don't do that!");
+      alert(
+        'Unable to divide by zero. Please input a different number to divide.'
+      );
       return;
     }
     if (firstNum && operator && secondNum !== false) {
@@ -67,7 +69,9 @@ operations.forEach((el) => {
 equalsBtn.addEventListener('click', () => {
   if (firstNum && operator && secondNum !== false) {
     if (operator === '/' && secondNum === 0) {
-      alert("Don't do that!");
+      alert(
+        'Unable to divide by zero. Please input a different number to divide.'
+      );
       return;
     }
     display.textContent =
