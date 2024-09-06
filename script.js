@@ -42,6 +42,7 @@ const operations = [addBtn, subtractBtn, multiplyBtn, divideBtn];
 const clearBtn = document.querySelector('#clear');
 const deleteBtn = document.querySelector('#backspace');
 const buttons = document.querySelectorAll('button');
+const display = document.querySelector('#display');
 
 operations.forEach((el) => {
   el.addEventListener('click', (e) => {
@@ -128,4 +129,8 @@ deleteBtn.addEventListener('click', () => {
     displayValue = display.textContent;
     secondNum = Number(displayValue);
   }
+});
+
+display.addEventListener('click', () => {
+  alert("This isn't a button.");
 });
