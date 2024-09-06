@@ -51,7 +51,7 @@ operations.forEach((el) => {
       );
       return;
     }
-    if (firstNum && operator && secondNum !== false) {
+    if (firstNum !== false && operator && secondNum !== false) {
       display.textContent =
         Math.round(operate(firstNum, operator, secondNum) * 1000000) / 1000000;
       displayValue = display.textContent;
@@ -68,7 +68,7 @@ operations.forEach((el) => {
 });
 
 equalsBtn.addEventListener('click', () => {
-  if (firstNum && operator && secondNum !== false) {
+  if (firstNum !== false && operator && secondNum !== false) {
     if (operator === '/' && secondNum === 0) {
       alert(
         'Unable to divide by zero. Please input a different number to divide.'
