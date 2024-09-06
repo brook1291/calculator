@@ -61,6 +61,20 @@ operations.forEach((el) => {
   });
 });
 
+equalsBtn.addEventListener('click', () => {
+  if (firstNum && operator && secondNum) {
+    if (operator === '/' && secondNum === 0) {
+      alert("Don't do that!");
+      return;
+    }
+    display.textContent =
+      Math.round(operate(firstNum, operator, secondNum) * 1000000) / 1000000;
+    displayValue = display.textContent;
+  }
+  firstNum = Number(displayValue);
+  secondNum = false;
+});
+
 numInputArr.forEach((node) => {
   node.addEventListener('click', populateDisplay);
 });
