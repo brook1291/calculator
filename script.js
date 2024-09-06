@@ -64,7 +64,7 @@ operations.forEach((el) => {
 });
 
 equalsBtn.addEventListener('click', () => {
-  if (firstNum && operator && secondNum) {
+  if (firstNum && operator && secondNum !== false) {
     if (operator === '/' && secondNum === 0) {
       alert("Don't do that!");
       return;
