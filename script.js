@@ -48,8 +48,7 @@ operations.forEach((el) => {
       return;
     }
     if (firstNum && operator) {
-      display.textContent =
-        Math.round(operate(firstNum, operator, secondNum) * 1000000) / 1000000;
+      display.textContent = operate(firstNum, operator, secondNum);
       displayValue = display.textContent;
     }
 
@@ -69,8 +68,7 @@ equalsBtn.addEventListener('click', () => {
       alert("Don't do that!");
       return;
     }
-    display.textContent =
-      Math.round(operate(firstNum, operator, secondNum) * 1000000) / 1000000;
+    display.textContent = operate(firstNum, operator, secondNum);
     displayValue = display.textContent;
   }
   firstNum = Number(displayValue);
@@ -106,3 +104,11 @@ function populateDisplay(e) {
   displayValue = display.textContent;
   secondNum = Number(displayValue);
 }
+
+clearBtn.addEventListener('click', () => {
+  display.textContent = '0';
+  displayValue = display.textContent;
+  firstNum = false;
+  secondNum = false;
+  operator = false;
+});
