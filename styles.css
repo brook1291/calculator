@@ -17,6 +17,7 @@ body {
   padding: 20px 15px;
   width: 450px;
   border: 2px solid rgb(119, 115, 115);
+  box-shadow: 2px 0px 5px 5px rgba(173, 72, 47, 0.69);
   border-radius: 10px;
 }
 
@@ -97,12 +98,12 @@ button:hover {
 #subtract,
 #divide,
 #multiply {
-  background-color: rgb(73, 83, 104);
+  background-color: rgb(98, 101, 107);
   color: white;
 }
 
 #equal {
-  background-color: rgb(74, 91, 95);
+  background-color: rgb(88, 93, 94);
   color: white;
 }
 
