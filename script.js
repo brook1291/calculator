@@ -115,3 +115,12 @@ clearBtn.addEventListener('click', () => {
   secondNum = false;
   operator = false;
 });
+
+deleteBtn.addEventListener('click', () => {
+  if (secondNum !== false) {
+    display.textContent = displayValue.slice(0, displayValue.length - 1);
+    if (display.textContent.length < 1) display.textContent = '0';
+    displayValue = display.textContent;
+    secondNum = Number(displayValue);
+  }
+});
