@@ -76,6 +76,10 @@ button:hover {
   font-weight: bold;
 }
 
+button:active {
+  opacity: 1;
+}
+
 #nine,
 #eight,
 #seven,
