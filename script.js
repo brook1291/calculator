@@ -152,7 +152,7 @@ document.addEventListener('keydown', (e) => {
   if (key === 'Backspace') deleteBtn.dispatchEvent(click);
   if (key === '+') addBtn.dispatchEvent(click);
   if (key === '-') subtractBtn.dispatchEvent(click);
-  if (key === '*') multiplyBtn.dispatchEvent(click);
+  if (key === '*' || key === 'x') multiplyBtn.dispatchEvent(click);
   if (key === '/') divideBtn.dispatchEvent(click);
   if (key === 'Enter' || key === '=') equalsBtn.dispatchEvent(click);
 });
