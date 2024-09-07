@@ -138,22 +138,7 @@ display.addEventListener('click', () => {
 const click = new MouseEvent('click');
 document.addEventListener('keydown', (e) => {
   const key = e.key;
-  if (key === '1') one.dispatchEvent(click);
-  if (key === '2') two.dispatchEvent(click);
-  if (key === '3') three.dispatchEvent(click);
-  if (key === '4') four.dispatchEvent(click);
-  if (key === '5') five.dispatchEvent(click);
-  if (key === '6') six.dispatchEvent(click);
-  if (key === '7') seven.dispatchEvent(click);
-  if (key === '8') eight.dispatchEvent(click);
-  if (key === '9') nine.dispatchEvent(click);
-  if (key === '0') zero.dispatchEvent(click);
-  if (key === '.') decimalPoint.dispatchEvent(click);
-  if (key === 'c') clearBtn.dispatchEvent(click);
-  if (key === 'Backspace') deleteBtn.dispatchEvent(click);
-  if (key === '+') addBtn.dispatchEvent(click);
-  if (key === '-') subtractBtn.dispatchEvent(click);
-  if (key === '*' || key === 'x') multiplyBtn.dispatchEvent(click);
-  if (key === '/') divideBtn.dispatchEvent(click);
-  if (key === 'Enter' || key === '=') equalsBtn.dispatchEvent(click);
+  buttons.forEach((button) => {
+    if (button.classList.contains(key)) button.dispatchEvent(click);
+  });
 });
