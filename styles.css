@@ -116,3 +116,10 @@ button:active {
   background-color: rgb(40, 40, 40);
   color: white;
 }
+
+#add.chosen-operator,
+#subtract.chosen-operator,
+#multiply.chosen-operator,
+#divide.chosen-operator {
+  background-color: rgb(105, 101, 107);
+}

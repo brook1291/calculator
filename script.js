@@ -65,6 +65,14 @@ operations.forEach((el) => {
 
     firstNum = Number(displayValue);
     secondNum = false;
+
+    for (let button of operations) {
+      if (button.id !== e.target.id) {
+        button.classList.remove('chosen-operator');
+      } else {
+        button.classList.add('chosen-operator');
+      }
+    }
   });
 });
 
@@ -120,6 +128,7 @@ clearBtn.addEventListener('click', () => {
   firstNum = false;
   secondNum = false;
   operator = false;
+  for (let button of operations) button.classList.remove('chosen-operator');
 });
 
 deleteBtn.addEventListener('click', () => {
