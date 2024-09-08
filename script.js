@@ -137,8 +137,7 @@ display.addEventListener('click', () => {
 
 const click = new MouseEvent('click');
 document.addEventListener('keydown', (e) => {
-  const key = e.key;
   buttons.forEach((button) => {
-    if (button.classList.contains(key)) button.dispatchEvent(click);
+    if (button.classList.contains(e.key)) button.dispatchEvent(click);
   });
 });
